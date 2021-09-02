@@ -1,18 +1,58 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <TheHero />
+    <TheRowBanner />
+     <div class="container">
+      <hr class="bg-warning" />
+      <TheRow />
+      <hr class="bg-warning" />
+    </div>
+    <TheMain />
+
+   
+
+    <TheBoxes />
+    <TheMailList />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import TheRowBanner from "@/components/TheRowBanner.vue";
+import TheMailList from "@/components/TheMailList.vue";
+import TheBoxes from "@/components/TheBoxes.vue";
+import TheRow from "@/components/TheRow.vue";
+import TheHero from "@/components/TheHero.vue";
+import TheMain from "@/components/TheMain.vue";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    HelloWorld
-  }
-}
+    TheHero,
+    TheMain,
+    TheRow,
+    TheBoxes,
+    TheMailList,
+    TheRowBanner,
+  },
+};
 </script>
+
+
+
+<style>
+a {
+  text-decoration: none !important;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-size: 16px;
+}
+
+body {
+  overflow-x: hidden;
+}
+</style>
